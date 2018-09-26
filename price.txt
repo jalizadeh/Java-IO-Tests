@@ -1,4 +1,4 @@
 Bread;1_2
 Oil;2.3
-Meat;5.0
+    Meat;        5.0
 Tomato;1.3
