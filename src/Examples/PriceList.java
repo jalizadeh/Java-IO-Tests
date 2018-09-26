@@ -29,8 +29,9 @@ public class PriceList {
 		
 	}
 	
-	static void readPrices() throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader("price.txt"));
+	void readPrices(String filename) throws IOException {
+		//BufferedReader br = new BufferedReader(new FileReader("price.txt"));
+		BufferedReader br = new BufferedReader(new FileReader(filename));
 		
 		String line;
 		Double total = 0.0;
@@ -54,8 +55,8 @@ public class PriceList {
 	} 
 	
 	
-	static List<Item> readPricesItem() throws IOException {
-		BufferedReader br = new BufferedReader(new FileReader("price.txt"));
+	 public static List<Item> readPricesItem(String filename) throws IOException {
+		BufferedReader br = new BufferedReader(new FileReader(filename));
 		LinkedList<Item> res = new LinkedList<>();
 		
 		String line;
